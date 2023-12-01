@@ -1,0 +1,58 @@
+.intro{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    /* height: auto; */
+    height: var(--ancho-pantalla);
+    /* background: url('inicio1.jpg'); */
+    background: url('inicio3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.title{
+    display: block;
+    margin: 40px;
+    color: white;
+    position: relative;
+    top: -100px;
+}
+
+.title h1{
+    font-size: 60px;
+    margin: 40px 0px 20px 0px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.title h3{
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
+    color: white;
+
+}
+
+.image{
+    margin: 0px 50px ;
+    position: relative;
+    bottom: -200px;
+    border-radius: 30px;
+    transform: skewX(-5deg);
+    /* padding: 10px 10px; */
+    /* box-shadow: 10px 10px 20px rgba(0,0,0,0.25); */
+}
+
+/* .image{
+    margin: 170px 90px 20px 70px;
+    border-radius: 30px;
+    transform: skewX(-5deg);
+    padding: 10px 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.25);
+} */
+
+/* .img{
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+} */
+

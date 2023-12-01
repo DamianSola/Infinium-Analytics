@@ -1,0 +1,44 @@
+.footer{
+    width: 100%;
+    height: 120px;
+    background-color: var(--dark-color-rgb);
+}
+
+.container{
+    display: flex;
+    height: 70%;
+    /* margin: auto; */
+}
+
+.container section{
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.container p{
+    color: white;
+}
+
+.image{
+    margin: 10px 40px;
+}
+
+.navbarIcon{
+    font-size: 30px;
+    margin: 30px;
+    color: white
+}
+
+.bottom{
+    border-top: solid 1px white;
+    margin: auto;
+    width: 95%;
+    height: 30%;
+    position: relative;
+    color: white;
+    bottom: 0;
+}
+.bottom p{
+    margin: 10px 0;
+}
