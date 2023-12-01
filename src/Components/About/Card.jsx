@@ -12,7 +12,7 @@ const Card = ({title, description, img}) => {
         <div className={style.card} >
             <div className={`${style.face} ${style.front}`} style={backImage}>
                 {/* <h1>{title}</h1> */}
-                <Image src={img} width='500' height='500' />
+                <Image src={img} width='500' height='500' alt="image-show"/>
 
             </div>
             <div className={`${style.face} ${style.back}`}>
