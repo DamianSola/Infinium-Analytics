@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import NavBar from '../Components/Navbar/page'
-import Intro from '@/Components/Introduction/page'
-import About from '@/Components/About/page'
+import NavBar from '../Components/Navbar'
+import Intro from '@/Components/Introduction'
+import About from '@/Components/About'
 import Footer from '@/Components/Footer/Footer'
-import Contact from '@/Components/Contact/page'
-import Portfolio from '@/Components/Portfolio/page'
+import Contact from '@/Components/Contact'
+import Portfolio from '@/Components/Portfolio'
 
 export default function Home() {
   return (
