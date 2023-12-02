@@ -1,6 +1,8 @@
 import Image from "next/image";
 import style from "./style.module.css"
-import dash from "src/Components/Introduction/picture2.png"
+// import dash from "src/Components/Introduction/picture2.png"
+import dash from '../../Components/Introduction/picture2.png';
+
 
 
 const Intro = () => {
