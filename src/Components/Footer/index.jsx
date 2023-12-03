@@ -1,6 +1,6 @@
 import style from "./style.module.css"
 // import logo from "./../logopurpura2.png"
-import logo from "./../whitebordo.png"
+import logo from "./../logo2.png"
 import Image from "next/image";
 import { FaLinkedin} from 'react-icons/fa';
 

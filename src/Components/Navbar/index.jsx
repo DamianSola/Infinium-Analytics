@@ -1,5 +1,4 @@
-import logo from "./../bordowhite.png";
-// import logo from "./../logopurpura.png";
+import logo from "./../logo1.png";
 import style from "./style.module.css";
 import Image from "next/image";
 

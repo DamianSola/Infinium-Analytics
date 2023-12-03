@@ -15,3 +15,30 @@ text-align: center;
 }
 
 
+/* .frame{
+
+} */
+
+@media(max-width: 1040px)and (min-width: 900px){
+
+    .frame{
+      width: 90%;
+      height: 390px;
+    }
+}
+@media(max-width: 899px)and (min-width: 700px){
+
+    .frame{
+      width: 90%;
+      height: 360px;
+    }
+}
+
+@media(max-width: 500px){
+
+    .frame{
+      width: 90%;
+      height: 220px;
+    }
+}
+

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import styled from 'styled-components';
+import style from "./style.module.css"
 
 const SliderCarousel = styled(Slider)`
 
@@ -10,6 +11,7 @@ const SliderCarousel = styled(Slider)`
     color: var(--dark-color-rgb);
     font-size: 40px;
   } 
+ 
 `
 
 const Carousel = () => {
@@ -28,23 +30,30 @@ const Carousel = () => {
             {i + 1}
           </div>
         ),
-     
+        responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              arrows: false
+            }
+          }
+        ]
     };
     
     return (
-      <div>
+      <div >
         <SliderCarousel {...settings}>
         <div>
           <h4>Finanzas</h4>
-          <iframe title="Sample Finanzas"width="80%" height="420" src="https://app.powerbi.com/view?r=eyJrIjoiM2MwNGZkNjItMDRkMS00ZGNhLWJjYmEtZGI2NTVmM2FiZjMwIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"/>
+          <iframe title="Sample Finanzas" className={style.frame} width="80%" height="420" src="https://app.powerbi.com/view?r=eyJrIjoiM2MwNGZkNjItMDRkMS00ZGNhLWJjYmEtZGI2NTVmM2FiZjMwIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"/>
         </div>
         <div>
           <h4>Recursos humanos</h4>
-          <iframe title="HR Sample" width="80%" height="420" src="https://app.powerbi.com/view?r=eyJrIjoiNzQ0NmNhOGItOGJmYy00MDYyLTk0ODItZDgxMDUzZDNmNmE0IiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"/>
+          <iframe title="HR Sample" className={style.frame} width="80%" height="420" src="https://app.powerbi.com/view?r=eyJrIjoiNzQ0NmNhOGItOGJmYy00MDYyLTk0ODItZDgxMDUzZDNmNmE0IiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"/>
         </div>
         <div>
           <h4>Inventarios</h4>
-          <iframe title="Report Section" width="80%" height="420" src="https://app.powerbi.com/view?r=eyJrIjoiODI5NTM0YTAtOTFjMi00NjdhLWFiMzMtZGYwZDc4MTE0MGJhIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"/>
+          <iframe title="Report Section" className={style.frame} width="80%" height="420" src="https://app.powerbi.com/view?r=eyJrIjoiODI5NTM0YTAtOTFjMi00NjdhLWFiMzMtZGYwZDc4MTE0MGJhIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"/>
         </div>
         </SliderCarousel>
       </div>

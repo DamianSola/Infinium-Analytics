@@ -26,9 +26,9 @@
 
 
 .card{
-    width: 450px;
-    margin:20px 15px;
-    /* width: 245px; */
+    width: 480px;
+    /* width: 50%; */
+    margin:20px 0px;
     height: 290px;
     position: relative;
     border-radius: 30px;
@@ -103,4 +103,32 @@
 
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
+}
+
+@media(max-width: 989px) and (min-width: 768px){
+
+    .card{
+        width: 500px;
+        height: 300px;
+
+    }
+}
+
+@media (max-width: 1030px) and (min-width: 990px){
+
+.card{
+    width: 370px;
+    height: 250px;
+
+}
+  
+}
+
+@media (max-width: 500px){
+    .card{
+        width: 340px;
+        height: 200px;
+       
+    }
+    
 }

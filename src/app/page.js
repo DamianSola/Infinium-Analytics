@@ -3,7 +3,7 @@ import styles from './page.module.css'
 import NavBar from '../Components/Navbar'
 import Intro from '@/Components/Introduction'
 import About from '@/Components/About'
-import Footer from '@/Components/Footer/Footer'
+import Footer from '@/Components/Footer'
 import Contact from '@/Components/Contact'
 import Portfolio from '@/Components/Portfolio'
 
