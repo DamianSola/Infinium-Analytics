@@ -7,10 +7,10 @@ import c4 from "./card4.png";
 
 const About = () => {
 
-    const cards = [{name: "title", img:c1, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
-    {name: "title", img:c2, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
-    {name: "title", img:c3, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
-    {name: "title", img:c4, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"}]
+    const cards = [{name: "Business Intelligence", img:c1, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
+    {name: "Machine Learning", img:c2, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
+    {name: "Market Insights", img:c3, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
+    {name: "Desarrollo Web", img:c4, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"}]
 
   
     return (
