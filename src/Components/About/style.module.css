@@ -29,6 +29,7 @@
     width: 480px;
     /* width: 50%; */
     margin:20px 0px;
+    margin-bottom: 30px;
     height: 290px;
     position: relative;
     border-radius: 30px;
@@ -70,13 +71,10 @@
     object-fit: cover;
 }
 
-.front h1 {
+.card h2{
     width: 100%;
-    height: 45px;
-    line-height: 45px;
-    /* color: #fff; */
     text-align: center;
-    color: var(--dark-color-rgb)
+    color: var(--dark-color-rgb);
 }
 
 .card .back {
@@ -90,12 +88,15 @@
     /* justify-content: space-between; */
     text-align: left;
     box-shadow: 0 5px 10px #000;
+    align-items: bottom;
+
 }
 
 
 
 .card .back p {
     letter-spacing: 1px;
+    align-items: bottom;
 } 
 
 .card:hover .front {

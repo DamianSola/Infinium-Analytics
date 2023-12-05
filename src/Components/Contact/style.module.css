@@ -8,38 +8,48 @@
 
 .contact{
     display: flex;
-    background-color: var(--ligth-color-rgb);
+    background-color: var(--dark-color-rgb);
+    /* background-color: var(--ligth-color-rgb); */
     margin: 10px 0;
     border-radius: 20px;
+    border: solid 2px var(--dark-color-rgb);
+}
+
+.foto{
+    margin: auto;
+    position: relative;
 }
 
 .contactUs{
-    background-color: var(--dark-color-rgb);
-    border-radius: 20px;
-    width: 50%;
+    /* background-color: var(--dark-color-rgb); */
+    /* background-color: var(--ligth-color-rgb); */
+    background-color: white;
+    border-radius: 17px;
+    width: 40%;
     padding: 20px;
     align-items: center;
-    color: white;
+    color: black;
+    /* position: relative; */
 }
 .contactUs h1{
     margin: 20px auto;
-    width: 80%;
-    font-size: 32px;
+    width: 90%;
+    font-size: 24px;
     align-items: center;
 
 }
 
 .contactUs p{
     margin: 20px auto;
-    width: 80%;
-    font-size: 24px;
+    width: 90%;
+    font-size: 18px;
     align-items: center;
     height: 100%;
 }
 
 .form{
     padding: 20px;
-    width: 50%;
+    width: 60%;
     text-align: center;
     /* margin: 20px; */
 }
@@ -67,10 +77,15 @@
     padding: 10px;
     margin: 5px;
     width: 100px;
-    background-color: var(--dark-color-rgb);
+    /* background-color: var(--dark-color-rgb); */
+    background-color: var(--ligth-color-rgb);
     border-style: none;
-    color: white;
+    color: black;
     border-radius: 10px;
+}
+
+.form button:hover{
+    background-color: white;
 }
 
 @media(max-width: 1024px) and (min-width: 601px){

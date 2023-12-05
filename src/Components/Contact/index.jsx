@@ -1,7 +1,9 @@
 'use client'
 import style from "./style.module.css"
 import emailjs from '@emailjs/browser';
+import Image from "next/image";
 import React, { useRef } from 'react';
+import foto from "src/Components/Contact/picontact.png"
 
 const Contact = () => {
 
@@ -27,8 +29,9 @@ const Contact = () => {
                 <section className={style.contactUs}>
                     <h1>¿Tenes alguna duda?</h1>
                     <p>Podes contactarnos completando el siguente formulario</p>
+                    {/* <Image src={foto} className={style.foto} width="40" height="60" /> */}
                 </section>
-                <form className={style.form}ref={form} onSubmit={sendEmail}>
+                <form className={style.form} ref={form} onSubmit={sendEmail}>
 
                     <input type="text" id="name" placeholder="Nombre*" required/><br/>
                     <input type="email" id="email" placeholder="Email*" required/><br/>

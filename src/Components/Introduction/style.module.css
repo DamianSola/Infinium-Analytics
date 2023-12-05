@@ -10,7 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 30px 0;
-    font-family:  var(--font-mono);
+      font-family:  var(--font-mono);
 
 }
 
@@ -40,10 +40,10 @@
 
 }
 
-.img{
+/* .img{
     position: relative;
-    bottom: -20%;
-}
+    bottom: -15%;
+} */
 
 
 @media (max-width: 1025px) and (min-width: 768px){

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import NavBar from '../Components/Navbar'
+import NavBar from '@/Components/Navbar'
 import Intro from '@/Components/Introduction'
 import About from '@/Components/About'
 import Footer from '@/Components/Footer'

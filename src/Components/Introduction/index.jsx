@@ -12,7 +12,7 @@ const Intro = () => {
                 <h3> Transformá tus datos en ventaja competitiva</h3>
             </section>
             <section className={style.image}>
-                <Image src={dash} width='500' className={style.img} alt="dash-image"/>
+                <Image src={dash} width='600' className={style.img} alt="dash-image"/>
             </section>
         </div>
     )

@@ -10,13 +10,12 @@ const Card = ({title, description, img}) => {
 
     return(
         <div className={style.card} >
+                <h2>{title}</h2>
             <div className={`${style.face} ${style.front}`} style={backImage}>
-                <h1>{title}</h1>
-                <Image src={img} width='500' height='500' alt="image-show"/>
-
+                <Image src={img} width='500' height='400' alt="image-show"/>
             </div>
             <div className={`${style.face} ${style.back}`}>
-                <h1>{title}</h1>
+                {/* <h1>{title}</h1> */}
                 <p className="text">{description}</p>
             </div>
         </div>
