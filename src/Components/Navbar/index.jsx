@@ -1,6 +1,7 @@
 import logo from "./../logo1.png";
 import style from "./style.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const NavBar = () => {
     return(
@@ -9,10 +10,10 @@ const NavBar = () => {
                 <a className="navbar-brand" href="#"><Image src={logo} className={style.image} alt="infinium" width="200"/></a>
                
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#about">Nosotros</a></li>
-                    <li><a href="#portfolio">Portafolio</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><Link href="#">Inicio</Link></li>
+                    <li><Link href="#about">Nosotros</Link></li>
+                    <li><Link href="#portfolio">Portafolio</Link></li>
+                    <li><Link href="#contact">Contacto</Link></li>
                 </ul>
             </nav>
     )

@@ -16,7 +16,6 @@ const About = () => {
     return (
         <div id="about" className={style.about}>
             <div>
-
             <h1 className={style.title}>Nosotros</h1>
             <div className={style.description}>
                 <p>Somos una empresa que brinda soluciones de Business Intelligence y Data Analytics a clientes de todas las industrias. Recopilamos, procesamos y analizamos grandes volúmenes de datos utilizando técnicas.</p>

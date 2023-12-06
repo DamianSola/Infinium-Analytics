@@ -4,9 +4,6 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--palido);
-  /* height: 100%; */
-  /* padding: 6rem; */
-  /* min-height: 100vh; */
 }
 
 
@@ -15,9 +12,8 @@
   margin: auto;
   flex-direction: column;
   width: 80%;
-  /* font-family: var(--font-mono); */
   font-family:  var(--font-mono);
-/* font-family: 'Exo 2', sans-serif; */
+
 }
 /* 
 .description a {
