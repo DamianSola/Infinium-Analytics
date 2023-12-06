@@ -9,28 +9,26 @@
 .contact{
     display: flex;
     background-color: var(--dark-color-rgb);
-    /* background-color: var(--ligth-color-rgb); */
     margin: 10px 0;
     border-radius: 20px;
     border: solid 2px var(--dark-color-rgb);
 }
 
-.foto{
+/* .foto{
     margin: auto;
-    position: relative;
-}
+} */
 
 .contactUs{
-    /* background-color: var(--dark-color-rgb); */
-    /* background-color: var(--ligth-color-rgb); */
     background-color: white;
     border-radius: 17px;
-    width: 40%;
-    padding: 20px;
-    align-items: center;
+    width: 30%;
+    padding: 10px;
+    /* align-items: center; */
     color: black;
-    /* position: relative; */
+    text-align: center;
+
 }
+
 .contactUs h1{
     margin: 20px auto;
     width: 90%;
@@ -42,14 +40,13 @@
 .contactUs p{
     margin: 20px auto;
     width: 90%;
-    font-size: 18px;
+    font-size: 15px;
     align-items: center;
-    height: 100%;
 }
 
 .form{
     padding: 20px;
-    width: 60%;
+    width: 70%;
     text-align: center;
     /* margin: 20px; */
 }
