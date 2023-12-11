@@ -7,13 +7,13 @@ const NavBar = () => {
     return(
       
             <nav className={style.navbar}>
-                <a className="navbar-brand" href="#"><Image src={logo} className={style.image} alt="infinium" width="200"/></a>
+                <Link href="#"><Image src={logo} className={style.image} alt="infinium" width="200"/></Link>
                
                 <ul>
-                    <li><Link href="#">Inicio</Link></li>
-                    <li><Link href="#about">Nosotros</Link></li>
-                    <li><Link href="#portfolio">Portafolio</Link></li>
-                    <li><Link href="#contact">Contacto</Link></li>
+                    <li><Link  className={style.dir} href="#">Inicio</Link></li>
+                    <li><Link className={style.dir} href="#about">Nosotros</Link></li>
+                    <li><Link className={style.dir} href="#portfolio">Portafolio</Link></li>
+                    <li><Link className={style.dir} href="#contact">Contacto</Link></li>
                 </ul>
             </nav>
     )

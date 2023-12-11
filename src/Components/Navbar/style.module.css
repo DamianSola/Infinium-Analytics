@@ -24,24 +24,29 @@
 .navbar li {
   display: inline;
   margin-right: 20px;
-  /* text-align: center; */
   align-items: center;
 
 }
   
-.navbar a {
+.dir {
   color: var(--dark-color-rgb);
   text-decoration: none;
   font-weight: bold;
   font-size: 25px;
+  padding: 5px;
+  transition: 0.5s;
+  border-radius: 5px;
 }
   
-.navbar a:hover {
-  color: #8B008B; /* Cambia el color al pasar el ratón sobre el enlace */
+.dir:hover {
+  color: white; 
+  background-color: var(--dark-color-rgb);
+
 }
   
 .image{
   margin: 0 40px;
+  
 }
 
 
