@@ -1,5 +1,6 @@
 'use client'
 import Slider from "react-slick";
+import { useState } from "react";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import styled from 'styled-components';
@@ -16,6 +17,8 @@ const SliderCarousel = styled(Slider)`
 
 const Carousel = () => {
 
+  const [currentSlide, setCurrentSlide] = useState(0);
+
     const settings = {
         dots: true,
         number: true,
@@ -26,10 +29,24 @@ const Carousel = () => {
         slidesToScroll: 1,
         initialSlide: 0,
         customPaging: (i) => (
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100%" , fontSize: "17px"}}>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '100%',
+              fontSize: '17px',
+              fontWeight: 'bold',
+              color: i === currentSlide ? '#82469C' : 'grey', // Cambia el color aquí
+              transition: 'color 0.3s ease-in-out', // Agrega una transición suave
+            }}
+          >
             {i + 1}
           </div>
         ),
+        afterChange: (current) => {
+          setCurrentSlide(current);
+        },
         responsive: [
           {
             breakpoint: 800,
