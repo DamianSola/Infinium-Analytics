@@ -29,7 +29,7 @@ const Contact = () => {
                 <section className={style.contactUs}>
                     <h1>¿Tenes alguna duda?</h1>
                     <p>Podes contactarnos completando el siguente formulario</p>
-                    <Image src={foto} className={style.foto} width="180" />
+                    <Image src={foto} className={style.foto} width="180" alt="contact-img"/>
                 </section>
                 <form className={style.form} ref={form} onSubmit={sendEmail}>
 
