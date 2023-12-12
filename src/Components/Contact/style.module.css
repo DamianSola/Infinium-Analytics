@@ -1,8 +1,9 @@
 .container{
     display: block;
+    padding: 70px 0px 0px 0px;
 }
 .title{
-    /* font-size: 40px; */
+    margin: 10px 0;
     color: var(--dark-color-rgb);
 }
 
@@ -14,16 +15,12 @@
     border: solid 2px var(--dark-color-rgb);
 }
 
-/* .foto{
-    margin: auto;
-} */
 
 .contactUs{
     background-color: white;
     border-radius: 17px;
     width: 30%;
     padding: 10px;
-    /* align-items: center; */
     color: black;
     text-align: center;
 
@@ -45,15 +42,15 @@
 }
 
 .form{
+   display: flex;
+   flex-wrap: wrap;
     padding: 20px;
     width: 70%;
-    text-align: center;
-    /* margin: 20px; */
 }
 
 .form input{
-    width: 70%;
-    margin: 5px;
+    width: 45%;
+    margin: auto;
     padding: 5px;
     height: 30px;
     border-style: none;
@@ -61,20 +58,17 @@
 }
 
 .form textarea{
-    width: 70%;
-    height: 100px;
+    width: 95%;
     padding: 5px;
-    border-style: none;
     border-radius: 2px;
-    margin: 5px;
-    height: 100px;
+    margin: auto;
 }
 
 .form button{
     padding: 10px;
-    margin: 5px;
+    margin: auto;
     width: 100px;
-    /* background-color: var(--dark-color-rgb); */
+    height: 40px;
     background-color: var(--ligth-color-rgb);
     border-style: none;
     color: black;
@@ -88,10 +82,11 @@
 @media(max-width: 1024px) and (min-width: 601px){
     .form input{
         width: 85%;
-       
+        margin: 5px auto;
     }
     .form textarea{
         width: 85%;
+        margin: 5px auto;
     }
     
 }
@@ -111,9 +106,13 @@
 
     .form input{
         width: 80%;
+        margin: 5px auto;
+
     }
 
     .form textarea{
         width: 80%;
+        margin: 5px auto;
+
     }
 }

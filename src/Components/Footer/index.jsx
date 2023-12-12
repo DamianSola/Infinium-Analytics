@@ -13,9 +13,11 @@ const Footer = () => {
                 <Image src={logo} className={style.image} alt="infinium" width="200"/>
                 <section>
                 <p>Encontranos en linkedin</p>
-                <a href="https://www.linkedin.com/in/damiansola" target="_blank" className={style.navbarIcon}  >
+                <a href="https://www.linkedin.com/company/infinium-analytics/" target="_blank" className={style.navbarIcon}  >
                     <FaLinkedin />
                 </a>
+                <a className={style.link} href="https://www.linkedin.com/company/infinium-analytics/" target="_blank">
+                    https://www.linkedin.com/company/infinium-analytics/</a>
                 </section>
             </div>
             <div className={style.bottom}>
