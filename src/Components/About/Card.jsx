@@ -3,24 +3,21 @@ import Image from "next/image"
 
 const Card = ({title, description, img}) => {
  
-    let backImage = {        
-        backgroundImage: 'url(' + img + ')'
-    }
-    // style={backImage}
+    // let backImage = {        
+    //     backgroundImage: 'url(' + img + ')'
+    // }
 
     return(
         <div className={style.card} >
                 <h2>{title}</h2>
-            <div className={`${style.face} ${style.front}`} style={backImage}>
-                <Image src={img} width='500' height='400' alt="image-show"/>
+            <div className={`${style.face} ${style.front}`} >
+                <Image src={img} width='500' alt="image-show"/>
             </div>
             <div className={`${style.face} ${style.back}`}>
-                {/* <h1>{title}</h1> */}
                 <p className="text">{description}</p>
             </div>
         </div>
     )
-   
 }
 
 export default Card;
