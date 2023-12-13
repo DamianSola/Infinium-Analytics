@@ -21,7 +21,7 @@ const Footer = () => {
                 </section>
             </div>
             <div className={style.bottom}>
-                <p>copyrigth @ 2023 Infinium, Analiticts </p>
+                <p>copyrigth @ 2023 Infinium, Analytics </p>
             </div>
         </footer>
     )
