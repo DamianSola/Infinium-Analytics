@@ -68,7 +68,8 @@
     }
 
     .image{
-        width: 80%;
+        /* width: 80%; */
+        text-align: right;
         height: auto;
         margin: 50px 0px;
     }
@@ -114,6 +115,16 @@
     }
  
     
+}
+
+@media (min-height: 1000px){
+    .intro{
+        height: 75vh;
+    }
+
+    .image{
+        width: 80%;
+    }
 }
 
 /* @media (min-width: 391px) and(max-width: 420px){

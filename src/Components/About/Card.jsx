@@ -1,6 +1,7 @@
 import style from "./style.module.css"
 import Image from "next/image"
 
+
 const Card = ({title, description, img}) => {
  
     // let backImage = {        

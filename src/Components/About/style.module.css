@@ -106,6 +106,8 @@
     transform: perspective(600px) rotateX(360deg);
 }
 
+  
+
 @media(max-width: 989px) and (min-width: 768px){
 
     .card{
@@ -120,7 +122,6 @@
 .card{
     width: 370px;
     height: 250px;
-
 }
   
 }
@@ -131,5 +132,5 @@
         height: 200px;
        
     }
-    
 }
+
