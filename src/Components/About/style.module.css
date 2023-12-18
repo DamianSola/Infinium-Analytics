@@ -135,8 +135,8 @@
 }
 @media (min-width: 1030px){
     .card{
-        width: 40%;
-        height: 200%;
+        width: 320px;
+        height: 250px;
     }
 }
 /* @media (max-height:900px) and (min-height:800px){
