@@ -4,6 +4,7 @@
     /* margin: 50px 0; */
     padding: 70px 0px;
     color: black;
+    height: 100vh;
 }
 
 .title{
@@ -17,7 +18,6 @@ text-align: center;
 
 
 /* .frame{
-
 } */
 
 @media(max-width: 1040px)and (min-width: 900px){
@@ -43,3 +43,9 @@ text-align: center;
     }
 }
 
+/* @media(min-height: 1000px){
+
+  .frame{
+    height: 500px;
+  }
+} */
