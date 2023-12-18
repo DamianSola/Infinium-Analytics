@@ -133,10 +133,15 @@
        
     }
 }
-
-@media (max-height:900px) and (min-height:800px){
+@media (max-width: 1030px){
+    .card{
+        width: 40%;
+        height: 40%;
+    }
+}
+/* @media (max-height:900px) and (min-height:800px){
     .card{
         width: 450px;
         height: 300px;
     }
-}
+} */
