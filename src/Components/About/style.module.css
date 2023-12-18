@@ -134,3 +134,9 @@
     }
 }
 
+@media (max-height:900px) and (min-height:800px){
+    .card{
+        width: 450px;
+        height: 300px;
+    }
+}
