@@ -117,7 +117,9 @@
     }
 }
 
-@media (max-width: 1030px) and (min-width: 990px){
+/* (max-width: 1030px) and */
+
+@media (min-width: 990px){
 
 .card{
     width: 370px;
@@ -133,12 +135,12 @@
        
     }
 }
-@media (min-width: 1030px){
+/* @media (min-width: 1030px){
     .card{
         width: 350px;
         height: 250px;
     }
-}
+} */
 /* @media (max-height:900px) and (min-height:800px){
     .card{
         width: 450px;
