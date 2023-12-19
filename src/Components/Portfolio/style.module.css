@@ -44,9 +44,9 @@ text-align: center;
     }
 }
 
-@media(min-height: 1040px){
+@media(min-width: 1281px){
 
   .frame{
-    height: 500px;
+    height: 700px;
   }
 }
