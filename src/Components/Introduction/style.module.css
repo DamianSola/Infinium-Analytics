@@ -117,13 +117,13 @@
     
 }
 
-@media (min-height: 1000px){
+@media (min-height: 1000px) and (min-width: 1300){
     .intro{
         height: 75vh;
     }
 
     .image{
-        width: 80%;
+        width: 100%;
     }
 }
 
