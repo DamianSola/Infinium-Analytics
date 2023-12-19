@@ -118,3 +118,10 @@
 
     }
 }
+
+@media(min-width: 1281px){
+
+    .container{
+      height: 600px;
+    }
+  }
