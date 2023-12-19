@@ -64,3 +64,10 @@
         text-align: center;
     }
 }
+
+@media(min-width: 1281px){
+
+    .footer{
+      height: 400px;
+    }
+  }
