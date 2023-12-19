@@ -115,7 +115,7 @@
     
 }
 
-@media (min-width: 1300){
+@media (min-width: 1300px){
     .intro{
         flex-direction: column;
         height: 75vh;
