@@ -35,10 +35,8 @@
 }
 
 .image{
-    /* text-align: right; */
     width: 52%;
     margin-top: 170px;
-    /* margin-right: 40px; */
 }
 
 /* .img{
@@ -117,13 +115,30 @@
     
 }
 
-@media (min-height: 1000px) and (min-width: 1300){
+@media (min-width: 1300){
     .intro{
+        flex-direction: column;
         height: 75vh;
     }
 
+    .title h1{
+        font-size: 70px;
+        margin: 40px 0px 20px 0px;
+    }
+    
+    .title h3{
+        font-size: 40px;
+        color: white;
+    
+    }
+    
     .image{
         width: 100%;
+        margin-top: 170px;
+    }
+    .img{
+        width: 600%;
+        text-align: right;
     }
 }
 
