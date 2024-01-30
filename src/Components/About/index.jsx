@@ -1,8 +1,8 @@
 import Card from "./Card"
 import style from "./style.module.css";
-import c1 from "./carta1.png";
-import c2 from "./carta2.png";
-import c3 from "./carta3.png";
+import c1 from "./picture_01.png";
+import c2 from "./picture_02.png";
+import c3 from "./picture_03.png";
 import c4 from "./carta4.png";
 
 const About = () => {

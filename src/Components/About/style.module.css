@@ -26,12 +26,12 @@
 }
 
 .card{
-    width: 480px;
+    width: 465px;
     /* width: 50%; */
-    margin: 20px 0px 50px 0px;
-    height: 280px;
+    margin: 10px 0px 80px 0px;
+    height: 285px;
     position: relative;
-    border-radius: 30px;
+    border-radius: 25px;
 }
 
 
@@ -53,9 +53,9 @@
     padding: 10px;
 }
 
-.face h1{
+/* .face h1{
     padding: 10px;
-}
+} */
 
 .front{
     transform: perspective(600px) rotateX(0deg);

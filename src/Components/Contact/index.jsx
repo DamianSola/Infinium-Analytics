@@ -27,17 +27,17 @@ const Contact = () => {
             <h1 className={style.title}>Contacto</h1>
             <div className={style.contact}>
                 <section className={style.contactUs}>
-                    <h1>¿Tenes alguna duda?</h1>
-                    <p>Podes contactarnos completando el siguente formulario</p>
+                    <h1>¿Tenés alguna duda?</h1>
+                    <p>Podés contactarnos completando el siguente formulario</p>
                     <Image src={foto} className={style.foto} width="180" alt="contact-img"/>
                 </section>
                 <form className={style.form} ref={form} onSubmit={sendEmail}>
 
                     <input type="text" id="name" placeholder="Nombre*" required/><br/>
                     <input type="email" id="email" placeholder="Email*" required/><br/>
-                    <input type="text" id="phone" placeholder="telefono" /><br/>
+                    <input type="text" id="phone" placeholder="Teléfono" /><br/>
                     <input type="text" id="company" placeholder="Companía*" required/><br/>
-                    <textarea type="text" id="message" placeholder="Consulta*" rows="5" required/><br/>
+                    <textarea type="text" id="message" placeholder="Consulta*" rows="7" required/><br/>
 
                     <button type="submit">Enviar</button>
                 </form>
