@@ -4,13 +4,14 @@ import c1 from "./picture_01.png";
 import c2 from "./picture_02.png";
 import c3 from "./picture_03.png";
 import c4 from "./carta4.png";
+import info from "./CardData.json";
 
 const About = () => {
 
-    const cards = [{name: "Business Intelligence", img:c1, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
-    {name: "Machine Learning", img:c2, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
-    {name: "Market Insights", img:c3, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
-    {name: "Desarrollo Web", img:c4, description:"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"}]
+    const cards = [{name: info[0].name, img:c1, description: info[0].description}, 
+    {name:  info[1].name, img:c2, description:info[1].description},
+    {name:  info[2].name, img:c3, description:info[2].description},
+    {name:  info[3].name, img:c4, description:info[3].description}]
 
   
     return (
