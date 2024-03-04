@@ -1,3 +1,4 @@
+
 import style from "./style.module.css"
 // import logo from "./../logopurpura2.png"
 import logo from "./../logo2.png"
@@ -7,9 +8,10 @@ import { FaLinkedin} from 'react-icons/fa';
 
 const Footer = () => {
 
+
     return (
         <footer className={style.footer}>
-            <div className={style.container}>
+            <div className={style.container} >
                 <Image src={logo} className={style.image} alt="infinium" width="200"/>
                 <section>
                 <p>Encontranos en linkedIn</p>

@@ -2,7 +2,7 @@
 import style from "./style.module.css"
 import emailjs from '@emailjs/browser';
 import Image from "next/image";
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import foto from "src/Components/Contact/picontact.png"
 
 const Contact = () => {
@@ -49,9 +49,30 @@ const Contact = () => {
             message: ''
         })
     }
+    
+    const  [animation, setAnimation] = useState("ocultar")
+    const aboutRef = useRef()
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const div = aboutRef.current;
+
+            const {y} = div.getBoundingClientRect();
+
+            if(y  > -280 && y < 550) setAnimation('mostrar')
+
+        }
+
+        window.addEventListener( "scroll", handleScroll);
+    
+        return () => window.removeEventListener( "scroll", handleScroll)
+
+
+    },[])
 
     return(
-        <div className={style.container} id="contact">
+        <div className={`${style.container} ${animation}`} ref={aboutRef} id="contact">
             <h1 className={style.title}>Contacto</h1>
             <div className={style.contact}>
                 <section className={style.contactUs}>

@@ -1,6 +1,6 @@
 'use client'
 import Slider from "react-slick";
-import { useState } from "react";
+import React,{ useState, useEffect, useRef } from "react";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import styled from 'styled-components';
@@ -18,6 +18,27 @@ const SliderCarousel = styled(Slider)`
 const Carousel = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const  [animation, setAnimation] = useState("ocultar")
+  const aboutRef = useRef()
+
+
+  useEffect(() => {
+      const handleScroll = () => {
+          const div = aboutRef.current;
+
+          const {y} = div.getBoundingClientRect();
+
+          if(y  > -280 && y < 400) setAnimation('mostrar')
+
+      }
+
+      window.addEventListener( "scroll", handleScroll);
+  
+      return () => window.removeEventListener( "scroll", handleScroll)
+
+
+  },[])
 
     const settings = {
         dots: true,
@@ -58,7 +79,7 @@ const Carousel = () => {
     };
     
     return (
-      <div >
+      <div className={animation} ref={aboutRef}>
         <SliderCarousel {...settings}>
         <div>
           <h4>Finanzas</h4>
