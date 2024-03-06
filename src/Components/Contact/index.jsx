@@ -25,12 +25,13 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        // console.log(formData.name)
 
         emailjs.send("service_ydywbmc","template_pkjvyor",{
             name: formData.name,
-            company: formData.company, 
+            name_company: formData.company, 
             phone: formData.phone,
-            message: formData.message,
+            comment: formData.message,
             email: formData.email,
             },"a_mj9GG3z_rUB1m7F"
         )
