@@ -1,6 +1,6 @@
 [
-    {"name": "Business Intelligence", "img":"", "description":"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
-    {"name": "Machine Learning", "img":"", "description":"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
-    {"name": "Market Insights", "img":"", "description":"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
-    {"name": "Desarrollo Web", "img":"", "description":"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"}
+    {"name": "Business Intelligence", "img":"","subtitle":"Todos tus datos en un solo lugar", "description":"Integramos tus distintas fuentes de informacion para crear un tablero interactivo con todos los indicadores relevantes para la gestion de tu negocio"},
+    {"name": "Machine Learning", "img":"","subtitle":"Impulsa la presencia digital de tu negocio" ,"description":"Integramos datos de distintas fuentes en una solución única. Procesamos y transformamos tus datos para obtener conclusiones a partir de ellos"},
+    {"name": "Market Insights", "img":"","subtitle":"Descubre el poder de los datos", "description":"Nuestro servicio de market insights te ofrece una visión profunda y detallada del comportamiento del mercado, las tendencias emergentes y las preferencias del consumidor."},
+    {"name": "Desarrollo Web", "img":"", "subtitle":"Impulsa la presencia digital de tu negocio" , "description":"Generamos una pagina web personalizada con toda la informacion necesaria para tener visibilidad en internet"}
 ]

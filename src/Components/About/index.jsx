@@ -10,10 +10,10 @@ import React,{useState, useRef, useEffect} from "react";
 
 const About = () => {
 
-    const cards = [{name: info[0].name, img:c1, description: info[0].description}, 
-    {name:  info[1].name, img:c2, description:info[1].description},
-    {name:  info[2].name, img:c3, description:info[2].description},
-    {name:  info[3].name, img:c4, description:info[3].description}]
+    const cards = [{name: info[0].name, img:c1,subtitle: info[0].subtitle, description: info[0].description}, 
+    {name:  info[1].name, img:c2, subtitle: info[1].subtitle, description:info[1].description},
+    {name:  info[2].name, img:c3, subtitle: info[2].subtitle, description:info[2].description},
+    {name:  info[3].name, img:c4, subtitle: info[3].subtitle, description:info[3].description}]
 
 
     const  [animation, setAnimation] = useState("ocultar")
@@ -52,6 +52,7 @@ const About = () => {
                     key={i}
                     title={e.name}
                     img={e.img}
+                    subtitle={e.subtitle}
                     description={e.description}
                     />
                 })}

@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 
-const Card = ({title, description, img}) => {
+const Card = ({title, description, img, subtitle}) => {
  
     
     const  [animation, setAnimation] = useState("ocultar")
@@ -35,6 +35,7 @@ const Card = ({title, description, img}) => {
                 <Image src={img} width='auto' alt="image-show"/>
             </div>
             <div className={`${style.face} ${style.back}`}>
+                <p><strong>{subtitle}</strong></p>
                 <p className="text">{description}</p>
             </div>
         </div>
