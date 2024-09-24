@@ -136,7 +136,7 @@
 @media (max-width: 500px){
     .card{
         width: 340px;
-        height: 200px;
+        height: 220px;
     }
 
     .description{
@@ -144,7 +144,7 @@
 
     }
     .face p{
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 /* @media (min-width: 1030px){
