@@ -44,7 +44,10 @@ const About = () => {
             <div className={animation}  ref={aboutRef}>
             <h1 className={style.title}>Nosotros</h1>
             <div className={style.description}>
-                <p>Somos una empresa que brinda soluciones de Business Intelligence y Data Analytics a clientes de todas las industrias. Recopilamos, procesamos y analizamos grandes volúmenes de datos utilizando técnicas.</p>
+                <p>Te ayudamos a explotar el poder de tus datos: 
+                    toma decisiones basadas en datos para optimizar procesos, identificar tendencias, reducir costos y 
+                    aumentar ganancias. 
+                    Nuestros principales servicios son:</p>
             </div>
             <div className={style.cards}>
                 {cards && cards.map((e,i) => {

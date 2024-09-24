@@ -9,7 +9,7 @@ const Intro = () => {
 
             <section className={style.title}>
                 <h1 className="text-center">Empowered by data</h1>
-                <h3> Transformá tus datos en ventaja competitiva</h3>
+                <h3>Transformá tus datos en una ventaja competitiva</h3>
             </section>
             <section className={style.image}>
                 <Image src={dash} width='600' className={style.img} alt="dash-image"/>
