@@ -150,7 +150,7 @@
     }
 } */
 
-@media (min-width: 1281) and (max-width:1450px){
+@media (min-width: 1281px) and (max-width:1450px){
     .intro{
         /* flex-direction: column; */
         height: 95vh;

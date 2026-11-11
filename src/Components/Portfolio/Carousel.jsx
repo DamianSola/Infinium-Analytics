@@ -1,10 +1,11 @@
 'use client'
 import Slider from "react-slick";
-import React,{ useState, useEffect, useRef } from "react";
-import "slick-carousel/slick/slick.css"; 
+import React, { useState } from "react";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from 'styled-components';
 import style from "./style.module.css"
+import useReveal from "@/hooks/useReveal";
 
 const SliderCarousel = styled(Slider)`
 
@@ -15,35 +16,30 @@ const SliderCarousel = styled(Slider)`
  
 `
 
+const slides = [
+    {
+        title: "Finanzas",
+        frameTitle: "Sample Finanzas",
+        src: "https://app.powerbi.com/view?r=eyJrIjoiM2MwNGZkNjItMDRkMS00ZGNhLWJjYmEtZGI2NTVmM2FiZjMwIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9",
+    },
+    {
+        title: "Recursos humanos",
+        frameTitle: "HR Sample",
+        src: "https://app.powerbi.com/view?r=eyJrIjoiNzQ0NmNhOGItOGJmYy00MDYyLTk0ODItZDgxMDUzZDNmNmE0IiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9",
+    },
+    {
+        title: "Inventarios",
+        frameTitle: "Report Section",
+        src: "https://app.powerbi.com/view?r=eyJrIjoiODI5NTM0YTAtOTFjMi00NjdhLWFiMzMtZGYwZDc4MTE0MGJhIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9",
+    },
+]
+
 const Carousel = () => {
-
   const [currentSlide, setCurrentSlide] = useState(0);
-  
-  const  [animation, setAnimation] = useState("ocultar")
-  const aboutRef = useRef()
-
-
-  useEffect(() => {
-      const handleScroll = () => {
-          const div = aboutRef.current;
-
-          const {y} = div.getBoundingClientRect();
-
-          if(y  > -280 && y < 400) setAnimation('mostrar')
-
-      }
-
-      window.addEventListener( "scroll", handleScroll);
-  
-      return () => window.removeEventListener( "scroll", handleScroll)
-
-
-  },[])
+  const [aboutRef, animation] = useReveal()
 
     const settings = {
         dots: true,
-        number: true,
-        lazyLoad: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -58,8 +54,8 @@ const Carousel = () => {
               height: '100%',
               fontSize: '17px',
               fontWeight: 'bold',
-              color: i === currentSlide ? '#82469C' : 'grey', // Cambia el color aquí
-              transition: 'color 0.3s ease-in-out', // Agrega una transición suave
+              color: i === currentSlide ? '#82469C' : 'grey',
+              transition: 'color 0.3s ease-in-out',
             }}
           >
             {i + 1}
@@ -81,18 +77,21 @@ const Carousel = () => {
     return (
       <div className={animation} ref={aboutRef}>
         <SliderCarousel {...settings}>
-        <div>
-          <h4>Finanzas</h4>
-          <iframe title="Sample Finanzas" className={style.frame} width="80%" height="420" src="https://app.powerbi.com/view?r=eyJrIjoiM2MwNGZkNjItMDRkMS00ZGNhLWJjYmEtZGI2NTVmM2FiZjMwIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"/>
-        </div>
-        <div>
-          <h4>Recursos humanos</h4>
-          <iframe title="HR Sample" className={style.frame} width="80%" height="420" src="https://app.powerbi.com/view?r=eyJrIjoiNzQ0NmNhOGItOGJmYy00MDYyLTk0ODItZDgxMDUzZDNmNmE0IiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"/>
-        </div>
-        <div>
-          <h4>Inventarios</h4>
-          <iframe title="Report Section" className={style.frame} width="80%" height="420" src="https://app.powerbi.com/view?r=eyJrIjoiODI5NTM0YTAtOTFjMi00NjdhLWFiMzMtZGYwZDc4MTE0MGJhIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"/>
-        </div>
+        {slides.map((slide) => (
+          <div key={slide.title}>
+            <h4>{slide.title}</h4>
+            <iframe
+              title={slide.frameTitle}
+              className={style.frame}
+              width="80%"
+              height="420"
+              src={slide.src}
+              frameBorder="0"
+              allowFullScreen
+              loading="lazy"
+            />
+          </div>
+        ))}
         </SliderCarousel>
       </div>
     );
@@ -100,5 +99,3 @@ const Carousel = () => {
 }
 
 export default Carousel;
-
-{/* <iframe title="HR Sample" width="100%" height="520px" padding="30px" src="https://app.powerbi.com/view?r=eyJrIjoiNzQ0NmNhOGItOGJmYy00MDYyLTk0ODItZDgxMDUzZDNmNmE0IiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe> */}

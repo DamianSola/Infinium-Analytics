@@ -96,11 +96,15 @@
     align-items: bottom;
 } 
 
-.card:hover .front {
+.card:hover .front,
+.card.flipped .front,
+.card:focus-visible .front {
     transform: perspective(600px) rotateX(180deg);
 }
 
-.card:hover .back {
+.card:hover .back,
+.card.flipped .back,
+.card:focus-visible .back {
     transform: perspective(600px) rotateX(360deg);
 }
 

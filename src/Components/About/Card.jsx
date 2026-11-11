@@ -1,38 +1,40 @@
 'use client'
 import style from "./style.module.css"
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
+import useReveal from "@/hooks/useReveal";
 
 
 const Card = ({title, description, img, subtitle}) => {
- 
-    
-    const  [animation, setAnimation] = useState("ocultar")
-    const aboutRef = useRef()
+    const [aboutRef, animation] = useReveal()
+    const [flipped, setFlipped] = useState(false)
 
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const div = aboutRef.current;
-
-            const {y} = div.getBoundingClientRect();
-
-            if(y  > -280 && y < 600) setAnimation('mostrar')
-
+    const toggleOnTouch = () => {
+        if (window.matchMedia("(hover: none)").matches) {
+            setFlipped((open) => !open)
         }
+    }
 
-        window.addEventListener( "scroll", handleScroll);
-    
-        return () => window.removeEventListener( "scroll", handleScroll)
-
-
-    },[])
+    const onKeyDown = (event) => {
+        if (event.key !== "Enter" && event.key !== " ") return
+        event.preventDefault()
+        setFlipped((open) => !open)
+    }
 
     return(
-        <div className={`${style.card} ${animation}`} ref={aboutRef}>
+        <div
+            className={`${style.card} ${animation} ${flipped ? style.flipped : ""}`}
+            ref={aboutRef}
+            role="button"
+            aria-pressed={flipped}
+            aria-label={title}
+            tabIndex={0}
+            onClick={toggleOnTouch}
+            onKeyDown={onKeyDown}
+        >
                 <h2>{title}</h2>
             <div className={`${style.face} ${style.front}`} >
-                <Image src={img} width='auto' alt="image-show"/>
+                <Image src={img} fill sizes="(max-width: 500px) 340px, 465px" alt={title} style={{ objectFit: "cover" }}/>
             </div>
             <div className={`${style.face} ${style.back}`}>
                 <p><strong>{subtitle}</strong></p>

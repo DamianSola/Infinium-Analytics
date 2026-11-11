@@ -81,6 +81,14 @@
     background-color: white;
 }
 
+.form button:disabled{
+    cursor: wait;
+}
+
+.form button:disabled:hover{
+    background-color: var(--ligth-color-rgb);
+}
+
 @media(max-width: 1024px) and (min-width: 601px){
     .form input{
         width: 85%;

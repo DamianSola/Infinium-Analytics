@@ -2,7 +2,7 @@
     {
         "name": "Business Intelligence", "img":"",
         "subtitle":"Todos tus datos en un solo lugar", 
-        "description":"Integramos tus distintas fuentes de informacion para crear un tablero interactivo con todos los indicadores relevantes para la gestion de tu negocio"},
+        "description":"Integramos tus distintas fuentes de información para crear un tablero interactivo con todos los indicadores relevantes para la gestión de tu negocio"},
     {
         "name": "Machine Learning", "img":"",
         "subtitle":"Los datos como ventaja competitiva" ,
@@ -10,7 +10,7 @@
     {
         "name": "Market Insights", "img":"",
         "subtitle":"Todo el mercado a sólo un click", 
-        "description":"Nuestro servicio de market insights te ofrece una visión profunda y detallada del comportamiento del mercado, las tendencias emergentes y las preferencias del consumidor."},
+        "description":"Nuestro servicio de market insights te ofrece una visión profunda y detallada del comportamiento del mercado, las tendencias emergentes y las preferencias del consumidor."},
     {
         "name": "Desarrollo Web", "img":"", 
         "subtitle":"Presencia web para tu negocio" , 
